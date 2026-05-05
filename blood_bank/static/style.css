@@ -1,71 +1,98 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff4b5c, #ff6f61);
-    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
 }
 
+/* Main container */
 .container {
+    max-width: 500px;
+    margin: 60px auto;
     text-align: center;
-    padding: 30px;
 }
 
+/* Title */
 h1 {
     margin-bottom: 20px;
+    color: #d62828;
 }
 
-.banner {
-    width: 60%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
+/* Card */
 .card {
     background: white;
-    color: black;
-    padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
+/* Inputs */
 input {
-    width: 90%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 14px;
 }
 
+/* Buttons */
 button {
-    background: #ff4b5c;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #d62828;
     color: white;
     border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 15px;
     cursor: pointer;
-    font-weight: bold;
 }
 
 button:hover {
-    background: #ff2e43;
+    background: #b71c1c;
 }
 
-.result-card {
+/* Home buttons */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu button {
+    background: #003049;
+}
+
+.menu button:hover {
+    background: #001f2e;
+}
+
+/* Result box */
+.result-box {
     background: white;
-    color: black;
-    margin: 10px auto;
     padding: 15px;
-    width: 300px;
+    margin: 10px 0;
     border-radius: 10px;
+    text-align: left;
 }
 
-.back-btn {
-    display: inline-block;
-    margin-top: 20px;
-    color: white;
+/* Status */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: red;
+    font-weight: bold;
+}
+
+/* Back link */
+.back {
+    display: block;
+    margin-top: 15px;
     text-decoration: none;
+    color: #003049;
     font-weight: bold;
 }

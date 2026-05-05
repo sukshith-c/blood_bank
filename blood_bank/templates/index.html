@@ -8,26 +8,20 @@
 
 <div class="container">
 
-    <h1>🩸 Smart Blood Bank System</h1>
+    <h1>🩸 Smart Blood Bank</h1>
 
-    <img src="https://hellohyderabad.org/wp-content/uploads/2025/04/BLOOD-BANKS.jpg" class="banner">
+    <div class="card menu">
 
-    <div class="card">
-        <h2>Add Blood</h2>
-        <form action="/add" method="POST">
-            <input name="blood_group" placeholder="Blood Group (A+, O-...)" required>
-            <input name="units" placeholder="Units" required>
-            <input name="location" placeholder="Location" required>
-            <button type="submit">➕ Add Blood</button>
-        </form>
-    </div>
+        <a href="/add_bank"><button>🏥 Add Blood Bank</button></a>
 
-    <div class="card">
-        <h2>Search Blood</h2>
-        <form action="/search" method="POST">
-            <input name="blood_group" placeholder="Enter Blood Group" required>
-            <button type="submit">🔍 Search</button>
-        </form>
+        <a href="/add_donor"><button>🧑 Add Donor</button></a>
+
+        <a href="/add_inventory_page"><button>🧪 Add Inventory</button></a>
+
+        <a href="/search"><button>🔍 Search Blood</button></a>
+
+        <a href="/request"><button>🚑 Request Blood</button></a>
+
     </div>
 
 </div>

@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Results</title>
+    <title>Search Blood</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
 <div class="container">
+    <h1>Search Blood</h1>
 
-    <h1>🔍 Search Results</h1>
+    <div class="card">
+        <form method="POST">
+            <input name="blood_group" placeholder="Blood Group" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
 
     {% if data %}
         {% for item in data %}
-            <div class="result-card">
-                <p><strong>Blood Group:</strong> {{ item.blood_group }}</p>
-                <p><strong>Units:</strong> {{ item.units }}</p>
-                <p><strong>Location:</strong> {{ item.location }}</p>
-            </div>
+        <div class="result-box">
+            <p><b>Group:</b> {{ item.blood_group }}</p>
+            <p><b>Units:</b> {{ item.units }}</p>
+            <p><b>Location:</b> {{ item.location }}</p>
+        </div>
         {% endfor %}
-    {% else %}
-        <p>No blood available</p>
     {% endif %}
 
-    <a href="/" class="back-btn">⬅ Go Back</a>
-
+    <a href="/" class="back">← Back</a>
 </div>
 
 </body>

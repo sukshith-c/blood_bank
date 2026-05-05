@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Request Result</h1>
+
+    <div class="card">
+        <p><b>Blood Group:</b> {{ blood_group }}</p>
+        <p><b>Units:</b> {{ units }}</p>
+
+        {% if status == "Approved" %}
+            <p class="success">Approved ✅</p>
+        {% else %}
+            <p class="pending">Pending ❌</p>
+        {% endif %}
+    </div>
+
+    <a href="/" class="back">← Back</a>
+</div>
+
+</body>
+</html>
